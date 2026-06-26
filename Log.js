@@ -4,7 +4,7 @@ require("dotenv").config();
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
 const LOG_API_URL = "http://4.224.186.213/evaluation-service/logs";
 
-// Debug
+
 console.log("ACCESS_TOKEN:", ACCESS_TOKEN);
 
 async function Log(stack, level, packageName, message) {
@@ -23,7 +23,7 @@ async function Log(stack, level, packageName, message) {
             }
         };
 
-        // Debug
+        
         console.log("Headers:", config.headers);
         console.log("Payload:", payload);
 
